@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>소금물</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<div style="margin: auto; width:415px; padding-top: 100px; padding-bottom: 10px;">
+	<input type="text" placeholder="소금의 질량" size="15" id="mySolute">g
+	<input type="text" placeholder="소금물의 질량" size="20" id="mySolution">ml
+
+	<button id="but1">농도 나와랏</button>
+	</div>
+
+
+	<div id="output" style="margin: auto; width:415px;height: 500px; background:blue; color:white; text-align: center; line-height: 900px; font-size: 1.5em; font-weight: 2em;">☆소금물의 농도가 궁금해? 왜??☆</div>
+
+	<script type="text/javascript">
+
+		but1.onclick = function () {
+
+			var Concentration = mySolute.value/mySolution.value*100
+			var finalOutput = "짭짤한 소금물의 농도는 " + Concentration + " !";
+
+			output.innerHTML = finalOutput;
+		}
+
+	</script>
+</body>
+</html>
